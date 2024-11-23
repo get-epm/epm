@@ -16,3 +16,9 @@ repository = "https://github.com/get-epm/epm"
 
 [workspace.lints.clippy]
 # todo
+
+[profile.release]
+codegen-units = 1
+strip = true
+lto = true
+panic = "abort"
