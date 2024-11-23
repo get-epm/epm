@@ -1,0 +1,13 @@
+[package]
+name = "php-epm"
+version = "0.0.1"
+
+# compilation metadata
+edition = "2021"
+
+# metadata for humans
+license = "AGPL-3.0"
+description = "An experimental PHP package manager"
+
+[dependencies]
+clap = "4.5.21"
