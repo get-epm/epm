@@ -1,0 +1,20 @@
+[package]
+name = "php-epm"
+version = "0.0.1"
+
+# compilation metadata
+edition.workspace = true
+
+# metadata for humans
+license.workspace = true
+description = "An experimental PHP package manager"
+
+[[bin]]
+name = "epm"
+path = "src/main.rs"
+
+[dependencies]
+clap = "4.5.21"
+
+[lints]
+workspace = true

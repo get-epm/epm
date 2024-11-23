@@ -1,13 +1,18 @@
-[package]
-name = "php-epm"
-version = "0.0.1"
+[workspace]
+members  = ["crates/*"]
+resolver = "2"
 
+[workspace.package]
 # compilation metadata
-edition = "2021"
+edition    = "2021"
 
 # metadata for humans
-license = "AGPL-3.0"
-description = "An experimental PHP package manager"
+authors    = ["Andrés Correa Casablanca <andreu@kindspells.dev>"]
+license    = "AGPL-3.0"
+repository = "https://github.com/get-epm/epm"
 
-[dependencies]
-clap = "4.5.21"
+[workspace.lints.rust]
+# todo
+
+[workspace.lints.clippy]
+# todo
