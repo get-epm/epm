@@ -1,0 +1,24 @@
+[workspace]
+members  = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+# compilation metadata
+edition    = "2021"
+
+# metadata for humans
+authors    = ["Andrés Correa Casablanca <andreu@kindspells.dev>"]
+license    = "AGPL-3.0"
+repository = "https://github.com/get-epm/epm"
+
+[workspace.lints.rust]
+# todo
+
+[workspace.lints.clippy]
+# todo
+
+[profile.release]
+codegen-units = 1
+strip = true
+lto = true
+panic = "abort"
